@@ -1,0 +1,8 @@
+prefix=/home/zeljko/catkin_ws/install
+
+Name: tp_gui
+Description: Description of tp_gui
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

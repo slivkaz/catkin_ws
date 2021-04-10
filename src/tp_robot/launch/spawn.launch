@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+	<param name="tp_robot" command="$(find xacro)/xacro --inorder '$(find tp_robot)/urdf/robot.urdf'" />
+
+	<arg name="x" default="0"/>
+	<arg name="y" default="0"/>
+	<arg name="z" default="0.5"/>
+	<link name="world"/>
+
+	<node name="my_robot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+	      args="-urdf -param tp_robot -model my_robot -x $(arg x) -y $(arg y) -z $(arg z)" />
+
+
+</launch>

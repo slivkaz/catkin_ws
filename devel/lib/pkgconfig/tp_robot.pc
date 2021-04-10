@@ -1,0 +1,8 @@
+prefix=/home/zeljko/catkin_ws/devel
+
+Name: tp_robot
+Description: Description of tp_robot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

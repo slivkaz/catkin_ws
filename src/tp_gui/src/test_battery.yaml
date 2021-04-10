@@ -1,0 +1,19 @@
+header: {
+    seq: 100001,
+    stamp: 1589100483,
+    frame_id: "100001"
+}
+voltage: 3.7
+current: 0.52
+charge: 2.080
+capacity: 2.600
+design_capacity: 2.600
+percentage: 100.00
+power_supply_status: 4
+power_supply_health: 1
+power_supply_technology: 2
+present: true
+cell_voltage: []
+location: "Bratislava"
+serial_number: "100001"
+

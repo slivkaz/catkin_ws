@@ -1,0 +1,22 @@
+<launch>
+
+ <!-- Run the map server --> 
+
+ <node name="map_server" pkg="map_server" type="map_server" args="$(find m2wr_description)/map/fMapa.yaml"/>
+
+ <!--- Run AMCL --> 
+
+   <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
+   
+
+   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find m2wr_description)/costmap_common_params.yaml" command="load" ns="global_costmap" /> 
+    <rosparam file="$(find m2wr_description)/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find m2wr_description)/move_base_params.yaml" command="load" />
+    <rosparam file="$(find m2wr_description)/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find m2wr_description)/global_costmap_params.yaml" command="load" /> 
+    <rosparam file="$(find m2wr_description)/base_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find m2wr_description)/global_planer_params.yaml" command="load" />		
+ </node>
+
+</launch> 

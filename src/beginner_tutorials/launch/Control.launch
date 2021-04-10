@@ -1,0 +1,7 @@
+<launch>
+
+<group ns="Control">
+<node pkg="teleop_twist_keyboard" name="Controll" type="teleop_twist_keyboard.py" args="cmd_vel:=turtle1/cmd_vel"/>
+
+</group>
+</launch>

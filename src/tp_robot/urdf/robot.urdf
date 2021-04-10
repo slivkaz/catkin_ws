@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+	
+	<link name="world">
+		<pose>0 0 0.1 0 0 0</pose>
+
+		<inertial>
+		<mass value="5"/>
+		<origin rpy="0 0 0" xyz="0 0 0.1"/>
+		<inertia ixx="0.039541666666667" ixy="0" ixz="0" iyy="0.106" iyz="0" izz="0.106"/>
+		</inertial>
+		
+		<colision name="colision_chassis">
+		<geometry>
+		<box size="2 2 1"/>
+		</geometry>
+		</colision>
+
+		<visual>
+		<origin rpy="0 0 0" xyz="0 0 0"/>
+		<geometry>
+		<box size="2 2 1"/>
+		</geometry>
+		</visual>
+
+<dynamics damping="50" friction="1"/>
+<xacro:property name="damping_value" value="10" />
+<xacro:property name="friction_value" value="0.1" />
+
+	</link>
+
+
+</robot>
