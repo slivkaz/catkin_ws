@@ -44,7 +44,7 @@
     <material>Gazebo/Blue</material>
   </gazebo>
 
- <gazebo reference="sensor_laser">
+ <gazebo reference="camera_link">
     <material>Gazebo/Red</material>
   </gazebo>
   
@@ -53,8 +53,8 @@
       <legacyMode>false</legacyMode>
       <alwaysOn>true</alwaysOn>
       <updateRate>20</updateRate>
-      <leftJoint>joint_right_wheel</leftJoint> !!mam to naopak!!
-      <rightJoint>joint_left_wheel</rightJoint>
+      <leftJoint>joint_left_wheel</leftJoint> <!-- Toto bolo naopak -->
+      <rightJoint>joint_right_wheel</rightJoint>
       <frontJoint>joint_front_wheel</frontJoint>
       <backJoint>joint_back_wheel</backJoint>
       <wheelSeparation>0.2</wheelSeparation>
@@ -67,35 +67,54 @@
     </plugin>
   </gazebo>
 
-  <gazebo reference="sensor_laser">
-    <sensor type="ray" name="head_hokuyo_sensor">
-      <pose>0 0 0 0 0 0</pose>
+  <gazebo reference="camera_link">
+    <sensor type="depth" name="kinect_sensor">
+      <pose frame="camera_link">0 0 0 0 1.5707 0</pose>
       <visualize>true</visualize>
       <update_rate>100</update_rate>
-      <ray>
-        <scan>
-          <horizontal>
-            <samples>666</samples>
-            <resolution>1</resolution>
-            <min_angle>-2.0943951024</min_angle>
-            <max_angle>2.0943951024</max_angle>
-          </horizontal>
-        </scan>
-        <range>
-          <min>0.10</min>
-          <max>5.6</max>
-          <resolution>0.01</resolution>
-        </range>
-        <noise>
-          <type>gaussian</type>
-          <mean>0.0</mean>
-          <stddev>0.01</stddev>
-        </noise>
-      </ray>
-      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
-        <topicName>/m2wr/laser/scan</topicName>
-        <frameName>sensor_laser</frameName>
-      </plugin>
+      <camera>
+          <horizontal_fov>1.047198</horizontal_fov>
+          <image>
+            <width>1024</width>
+            <height>1024</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.25</near>
+            <far>5.46</far>
+          </clip>
+          <noise>
+              <type>gaussian</type>
+              <mean>0.5</mean>
+              <stddev>1.0</stddev>
+          </noise>
+        </camera>
+      <plugin name="camera_plugin" filename="libgazebo_ros_openni_kinect.so">
+          <baseline>0.2</baseline>
+          <alwaysOn>true</alwaysOn>
+          <!-- Keep this zero, update_rate in the parent <sensor> tag
+            will control the frame rate. -->
+          <updateRate>0.0</updateRate>
+          <cameraName>kinect_sensor</cameraName>
+          <imageTopicName>/camera/rgb/image_raw</imageTopicName>
+          <cameraInfoTopicName>/camera/rgb/camera_info</cameraInfoTopicName>
+          <depthImageTopicName>/camera/depth_registered/image_raw</depthImageTopicName>
+          <depthImageCameraInfoTopicName>/camera/depth_registered/camera_info</depthImageCameraInfoTopicName>
+          <pointCloudTopicName>/camera/depth_registered/points</pointCloudTopicName>
+          <frameName>camera_link_optical</frameName>
+          <pointCloudCutoff>0.5</pointCloudCutoff>
+          <pointCloudCutoffMax>3.0</pointCloudCutoffMax>
+          <distortionK1>0</distortionK1>
+          <distortionK2>0</distortionK2>
+          <distortionK3>0</distortionK3>
+          <distortionT1>0</distortionT1>
+          <distortionT2>0</distortionT2>
+          <CxPrime>0</CxPrime>
+          <Cx>0</Cx>
+          <Cy>0</Cy>
+          <focalLength>0</focalLength>
+          <hackBaseline>0</hackBaseline>
+        </plugin>
     </sensor>
   </gazebo>
 
@@ -138,7 +157,7 @@
 
   </link>
 
-  <link name="sensor_laser">
+  <link name="camera_link">
     <inertial>
 	<mass value="0.1" />
         <origin rpy="0 0 0" xyz="0 0 0" />
@@ -162,11 +181,30 @@
     </collision>
     </link>
 
-    <joint name="joint_sensor_laser" type="fixed">
-    <origin xyz="0.43 0.43 -0.22" rpy="0 0 0.53"/>
+    <joint name="joint_camera" type="fixed">
+    <origin xyz="0.23 -0.06 -0.11" rpy="0 0 0"/>
     <parent link="link_chassis"/>
-    <child link="sensor_laser"/>
+    <child link="camera_link"/>
   </joint>
+
+  <joint name="camera_optical_joint" type="fixed">
+    <!-- these values have to be these values otherwise the gazebo camera
+        image won't be aligned properly with the frame it is supposedly
+        originating from -->
+    <origin xyz="0 0 0" rpy="-1.5708 0 -1.5708"/>
+    <parent link="camera_link"/>
+    <child link="camera_link_optical"/>
+  </joint>
+  <link name="camera_link_optical">
+  </link>
+
+  <joint name="camera_link_joint" type="fixed">
+        <origin xyz="0 0 0.6"
+                rpy="0 0 0" />
+        <parent link="link_chassis"/>
+        <child link="camera_link"/>
+    </joint>
+
 
   <link name="link_right_wheel">
     <inertial>
