@@ -13,7 +13,16 @@
 	
 	<!--<node pkg="tf" type="static_transform_publisher" name="base_to_kinect" args=" 0 0 0 0 1.5708 		1.5708	link_chassis camera_link_optical 100" />-->
 
-       
+        <!-- send fake joint values -->
+  	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    	<param name="use_gui" value="False"/>
+  	</node>
+
+  	<!-- Combine joint values -->
+  	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+
+  	<!-- Show in Rviz   -->
+  	<node name="rviz" pkg="rviz" type="rviz" />
         
 
 
