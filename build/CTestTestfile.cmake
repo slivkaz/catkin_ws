@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("aws-robomaker-small-warehouse-world-master")
 subdirs("navigation-melodic-devel/navigation")
 subdirs("slam_gmapping/slam_gmapping")
 subdirs("tp_robot")
@@ -28,3 +29,4 @@ subdirs("navigation-melodic-devel/navfn")
 subdirs("navigation-melodic-devel/global_planner")
 subdirs("navigation-melodic-devel/rotate_recovery")
 subdirs("navigation-melodic-devel/move_base")
+subdirs("rtabmap_ros")

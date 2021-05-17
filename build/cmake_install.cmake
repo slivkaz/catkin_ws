@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/zeljko/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/zeljko/catkin_ws/build/aws-robomaker-small-warehouse-world-master/cmake_install.cmake")
   include("/home/zeljko/catkin_ws/build/navigation-melodic-devel/navigation/cmake_install.cmake")
   include("/home/zeljko/catkin_ws/build/slam_gmapping/slam_gmapping/cmake_install.cmake")
   include("/home/zeljko/catkin_ws/build/tp_robot/cmake_install.cmake")
@@ -154,6 +155,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/zeljko/catkin_ws/build/navigation-melodic-devel/global_planner/cmake_install.cmake")
   include("/home/zeljko/catkin_ws/build/navigation-melodic-devel/rotate_recovery/cmake_install.cmake")
   include("/home/zeljko/catkin_ws/build/navigation-melodic-devel/move_base/cmake_install.cmake")
+  include("/home/zeljko/catkin_ws/build/rtabmap_ros/cmake_install.cmake")
 
 endif()
 

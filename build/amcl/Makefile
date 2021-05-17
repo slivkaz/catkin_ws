@@ -68,6 +68,18 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -102,16 +114,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -123,17 +125,15 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -198,6 +198,36 @@ run_tests_amcl_rostest_test_rosie_multilaser.xml/fast:
 .PHONY : run_tests_amcl_rostest_test_rosie_multilaser.xml/fast
 
 # Convenience name for target.
+amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
+.PHONY : amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
+
+# Convenience name for target.
+_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml: amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
+
+.PHONY : _run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml
+
+# fast build rule for target.
+_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/build.make amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/build
+.PHONY : _run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml/fast
+
+# Convenience name for target.
+amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
+.PHONY : amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
+
+# Convenience name for target.
+run_tests_amcl_rostest_test_texas_greenroom_loop.xml: amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
+
+.PHONY : run_tests_amcl_rostest_test_texas_greenroom_loop.xml
+
+# fast build rule for target.
+run_tests_amcl_rostest_test_texas_greenroom_loop.xml/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/build.make amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/build
+.PHONY : run_tests_amcl_rostest_test_texas_greenroom_loop.xml/fast
+
+# Convenience name for target.
 amcl/CMakeFiles/_run_tests_amcl_rostest_test_small_loop_crazy_driving_prg.xml.dir/rule:
 	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/_run_tests_amcl_rostest_test_small_loop_crazy_driving_prg.xml.dir/rule
 .PHONY : amcl/CMakeFiles/_run_tests_amcl_rostest_test_small_loop_crazy_driving_prg.xml.dir/rule
@@ -243,79 +273,49 @@ _run_tests_amcl_rostest_test_small_loop_prf.xml/fast:
 .PHONY : _run_tests_amcl_rostest_test_small_loop_prf.xml/fast
 
 # Convenience name for target.
-amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
-.PHONY : amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
+amcl/CMakeFiles/amcl_basic_localization_stage_indexed.bag.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/amcl_basic_localization_stage_indexed.bag.dir/rule
+.PHONY : amcl/CMakeFiles/amcl_basic_localization_stage_indexed.bag.dir/rule
 
 # Convenience name for target.
-_run_tests_amcl_rostest_test_basic_localization_stage.xml: amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
+amcl_basic_localization_stage_indexed.bag: amcl/CMakeFiles/amcl_basic_localization_stage_indexed.bag.dir/rule
 
-.PHONY : _run_tests_amcl_rostest_test_basic_localization_stage.xml
+.PHONY : amcl_basic_localization_stage_indexed.bag
 
 # fast build rule for target.
-_run_tests_amcl_rostest_test_basic_localization_stage.xml/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/build.make amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/build
-.PHONY : _run_tests_amcl_rostest_test_basic_localization_stage.xml/fast
+amcl_basic_localization_stage_indexed.bag/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_basic_localization_stage_indexed.bag.dir/build.make amcl/CMakeFiles/amcl_basic_localization_stage_indexed.bag.dir/build
+.PHONY : amcl_basic_localization_stage_indexed.bag/fast
 
 # Convenience name for target.
-amcl/CMakeFiles/run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
-.PHONY : amcl/CMakeFiles/run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
+amcl/CMakeFiles/amcl_sensors.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/amcl_sensors.dir/rule
+.PHONY : amcl/CMakeFiles/amcl_sensors.dir/rule
 
 # Convenience name for target.
-run_tests_amcl_rostest_test_basic_localization_stage.xml: amcl/CMakeFiles/run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
+amcl_sensors: amcl/CMakeFiles/amcl_sensors.dir/rule
 
-.PHONY : run_tests_amcl_rostest_test_basic_localization_stage.xml
+.PHONY : amcl_sensors
 
 # fast build rule for target.
-run_tests_amcl_rostest_test_basic_localization_stage.xml/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/build.make amcl/CMakeFiles/run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/build
-.PHONY : run_tests_amcl_rostest_test_basic_localization_stage.xml/fast
+amcl_sensors/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_sensors.dir/build.make amcl/CMakeFiles/amcl_sensors.dir/build
+.PHONY : amcl_sensors/fast
 
 # Convenience name for target.
-amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
-.PHONY : amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
+amcl/CMakeFiles/amcl_pf.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/amcl_pf.dir/rule
+.PHONY : amcl/CMakeFiles/amcl_pf.dir/rule
 
 # Convenience name for target.
-_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml: amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
+amcl_pf: amcl/CMakeFiles/amcl_pf.dir/rule
 
-.PHONY : _run_tests_amcl_rostest_test_set_initial_pose_delayed.xml
+.PHONY : amcl_pf
 
 # fast build rule for target.
-_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/build.make amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/build
-.PHONY : _run_tests_amcl_rostest_test_set_initial_pose_delayed.xml/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/run_tests_amcl_rostest_test_small_loop_prf.xml.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/run_tests_amcl_rostest_test_small_loop_prf.xml.dir/rule
-.PHONY : amcl/CMakeFiles/run_tests_amcl_rostest_test_small_loop_prf.xml.dir/rule
-
-# Convenience name for target.
-run_tests_amcl_rostest_test_small_loop_prf.xml: amcl/CMakeFiles/run_tests_amcl_rostest_test_small_loop_prf.xml.dir/rule
-
-.PHONY : run_tests_amcl_rostest_test_small_loop_prf.xml
-
-# fast build rule for target.
-run_tests_amcl_rostest_test_small_loop_prf.xml/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/run_tests_amcl_rostest_test_small_loop_prf.xml.dir/build.make amcl/CMakeFiles/run_tests_amcl_rostest_test_small_loop_prf.xml.dir/build
-.PHONY : run_tests_amcl_rostest_test_small_loop_prf.xml/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/amcl_gencfg.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/amcl_gencfg.dir/rule
-.PHONY : amcl/CMakeFiles/amcl_gencfg.dir/rule
-
-# Convenience name for target.
-amcl_gencfg: amcl/CMakeFiles/amcl_gencfg.dir/rule
-
-.PHONY : amcl_gencfg
-
-# fast build rule for target.
-amcl_gencfg/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_gencfg.dir/build.make amcl/CMakeFiles/amcl_gencfg.dir/build
-.PHONY : amcl_gencfg/fast
+amcl_pf/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_pf.dir/build.make amcl/CMakeFiles/amcl_pf.dir/build
+.PHONY : amcl_pf/fast
 
 # Convenience name for target.
 amcl/CMakeFiles/amcl_small_loop_prf_indexed.bag.dir/rule:
@@ -333,6 +333,81 @@ amcl_small_loop_prf_indexed.bag/fast:
 .PHONY : amcl_small_loop_prf_indexed.bag/fast
 
 # Convenience name for target.
+amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
+.PHONY : amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
+
+# Convenience name for target.
+run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml: amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
+
+.PHONY : run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml
+
+# fast build rule for target.
+run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/build.make amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/build
+.PHONY : run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml/fast
+
+# Convenience name for target.
+amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+.PHONY : amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_lisp: amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+
+.PHONY : topic_tools_generate_messages_lisp
+
+# fast build rule for target.
+topic_tools_generate_messages_lisp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
+.PHONY : topic_tools_generate_messages_lisp/fast
+
+# Convenience name for target.
+amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
+.PHONY : amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
+
+# Convenience name for target.
+_run_tests_amcl_rostest_test_texas_greenroom_loop.xml: amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
+
+.PHONY : _run_tests_amcl_rostest_test_texas_greenroom_loop.xml
+
+# fast build rule for target.
+_run_tests_amcl_rostest_test_texas_greenroom_loop.xml/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/build.make amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/build
+.PHONY : _run_tests_amcl_rostest_test_texas_greenroom_loop.xml/fast
+
+# Convenience name for target.
+amcl/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+.PHONY : amcl/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_py: amcl/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+
+.PHONY : topic_tools_generate_messages_py
+
+# fast build rule for target.
+topic_tools_generate_messages_py/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/topic_tools_generate_messages_py.dir/build.make amcl/CMakeFiles/topic_tools_generate_messages_py.dir/build
+.PHONY : topic_tools_generate_messages_py/fast
+
+# Convenience name for target.
+amcl/CMakeFiles/run_tests_amcl_rostest.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/run_tests_amcl_rostest.dir/rule
+.PHONY : amcl/CMakeFiles/run_tests_amcl_rostest.dir/rule
+
+# Convenience name for target.
+run_tests_amcl_rostest: amcl/CMakeFiles/run_tests_amcl_rostest.dir/rule
+
+.PHONY : run_tests_amcl_rostest
+
+# fast build rule for target.
+run_tests_amcl_rostest/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/run_tests_amcl_rostest.dir/build.make amcl/CMakeFiles/run_tests_amcl_rostest.dir/build
+.PHONY : run_tests_amcl_rostest/fast
+
+# Convenience name for target.
 amcl/CMakeFiles/topic_tools_generate_messages_eus.dir/rule:
 	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
 .PHONY : amcl/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
@@ -346,51 +421,6 @@ topic_tools_generate_messages_eus: amcl/CMakeFiles/topic_tools_generate_messages
 topic_tools_generate_messages_eus/fast:
 	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make amcl/CMakeFiles/topic_tools_generate_messages_eus.dir/build
 .PHONY : topic_tools_generate_messages_eus/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
-.PHONY : amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
-
-# Convenience name for target.
-_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml: amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
-
-.PHONY : _run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml
-
-# fast build rule for target.
-_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/build.make amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/build
-.PHONY : _run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
-.PHONY : amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
-
-# Convenience name for target.
-run_tests_amcl_rostest_test_texas_greenroom_loop.xml: amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
-
-.PHONY : run_tests_amcl_rostest_test_texas_greenroom_loop.xml
-
-# fast build rule for target.
-run_tests_amcl_rostest_test_texas_greenroom_loop.xml/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/build.make amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/build
-.PHONY : run_tests_amcl_rostest_test_texas_greenroom_loop.xml/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : amcl/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_py: amcl/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/std_srvs_generate_messages_py.dir/build.make amcl/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
 
 # Convenience name for target.
 amcl/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule:
@@ -453,216 +483,6 @@ diagnostic_msgs_generate_messages_lisp/fast:
 .PHONY : diagnostic_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
-.PHONY : amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
-
-# Convenience name for target.
-run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml: amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/rule
-
-.PHONY : run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml
-
-# fast build rule for target.
-run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/build.make amcl/CMakeFiles/run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml.dir/build
-.PHONY : run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-.PHONY : amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_lisp: amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-
-.PHONY : topic_tools_generate_messages_lisp
-
-# fast build rule for target.
-topic_tools_generate_messages_lisp/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make amcl/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
-.PHONY : topic_tools_generate_messages_lisp/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-.PHONY : amcl/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_lisp: amcl/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make amcl/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-.PHONY : amcl/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_eus: amcl/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make amcl/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
-.PHONY : amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
-
-# Convenience name for target.
-_run_tests_amcl_rostest_test_texas_greenroom_loop.xml: amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/rule
-
-.PHONY : _run_tests_amcl_rostest_test_texas_greenroom_loop.xml
-
-# fast build rule for target.
-_run_tests_amcl_rostest_test_texas_greenroom_loop.xml/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/build.make amcl/CMakeFiles/_run_tests_amcl_rostest_test_texas_greenroom_loop.xml.dir/build
-.PHONY : _run_tests_amcl_rostest_test_texas_greenroom_loop.xml/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/run_tests_amcl_rostest.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/run_tests_amcl_rostest.dir/rule
-.PHONY : amcl/CMakeFiles/run_tests_amcl_rostest.dir/rule
-
-# Convenience name for target.
-run_tests_amcl_rostest: amcl/CMakeFiles/run_tests_amcl_rostest.dir/rule
-
-.PHONY : run_tests_amcl_rostest
-
-# fast build rule for target.
-run_tests_amcl_rostest/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/run_tests_amcl_rostest.dir/build.make amcl/CMakeFiles/run_tests_amcl_rostest.dir/build
-.PHONY : run_tests_amcl_rostest/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-.PHONY : amcl/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_py: amcl/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-
-.PHONY : topic_tools_generate_messages_py
-
-# fast build rule for target.
-topic_tools_generate_messages_py/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/topic_tools_generate_messages_py.dir/build.make amcl/CMakeFiles/topic_tools_generate_messages_py.dir/build
-.PHONY : topic_tools_generate_messages_py/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/amcl_sensors.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/amcl_sensors.dir/rule
-.PHONY : amcl/CMakeFiles/amcl_sensors.dir/rule
-
-# Convenience name for target.
-amcl_sensors: amcl/CMakeFiles/amcl_sensors.dir/rule
-
-.PHONY : amcl_sensors
-
-# fast build rule for target.
-amcl_sensors/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_sensors.dir/build.make amcl/CMakeFiles/amcl_sensors.dir/build
-.PHONY : amcl_sensors/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/amcl_basic_localization_stage_indexed.bag.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/amcl_basic_localization_stage_indexed.bag.dir/rule
-.PHONY : amcl/CMakeFiles/amcl_basic_localization_stage_indexed.bag.dir/rule
-
-# Convenience name for target.
-amcl_basic_localization_stage_indexed.bag: amcl/CMakeFiles/amcl_basic_localization_stage_indexed.bag.dir/rule
-
-.PHONY : amcl_basic_localization_stage_indexed.bag
-
-# fast build rule for target.
-amcl_basic_localization_stage_indexed.bag/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_basic_localization_stage_indexed.bag.dir/build.make amcl/CMakeFiles/amcl_basic_localization_stage_indexed.bag.dir/build
-.PHONY : amcl_basic_localization_stage_indexed.bag/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-.PHONY : amcl/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_nodejs: amcl/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make amcl/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
-.PHONY : amcl/CMakeFiles/run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
-
-# Convenience name for target.
-run_tests_amcl_rostest_test_set_initial_pose_delayed.xml: amcl/CMakeFiles/run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
-
-.PHONY : run_tests_amcl_rostest_test_set_initial_pose_delayed.xml
-
-# fast build rule for target.
-run_tests_amcl_rostest_test_set_initial_pose_delayed.xml/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/build.make amcl/CMakeFiles/run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/build
-.PHONY : run_tests_amcl_rostest_test_set_initial_pose_delayed.xml/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/amcl_willow-full-0.05.pgm.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/amcl_willow-full-0.05.pgm.dir/rule
-.PHONY : amcl/CMakeFiles/amcl_willow-full-0.05.pgm.dir/rule
-
-# Convenience name for target.
-amcl_willow-full-0.05.pgm: amcl/CMakeFiles/amcl_willow-full-0.05.pgm.dir/rule
-
-.PHONY : amcl_willow-full-0.05.pgm
-
-# fast build rule for target.
-amcl_willow-full-0.05.pgm/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_willow-full-0.05.pgm.dir/build.make amcl/CMakeFiles/amcl_willow-full-0.05.pgm.dir/build
-.PHONY : amcl_willow-full-0.05.pgm/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-.PHONY : amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_cpp: amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-.PHONY : topic_tools_generate_messages_cpp
-
-# fast build rule for target.
-topic_tools_generate_messages_cpp/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-.PHONY : topic_tools_generate_messages_cpp/fast
-
-# Convenience name for target.
-amcl/CMakeFiles/amcl_global_localization_stage_indexed.bag.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/amcl_global_localization_stage_indexed.bag.dir/rule
-.PHONY : amcl/CMakeFiles/amcl_global_localization_stage_indexed.bag.dir/rule
-
-# Convenience name for target.
-amcl_global_localization_stage_indexed.bag: amcl/CMakeFiles/amcl_global_localization_stage_indexed.bag.dir/rule
-
-.PHONY : amcl_global_localization_stage_indexed.bag
-
-# fast build rule for target.
-amcl_global_localization_stage_indexed.bag/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_global_localization_stage_indexed.bag.dir/build.make amcl/CMakeFiles/amcl_global_localization_stage_indexed.bag.dir/build
-.PHONY : amcl_global_localization_stage_indexed.bag/fast
-
-# Convenience name for target.
 amcl/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
 .PHONY : amcl/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
@@ -693,34 +513,34 @@ amcl_texas_willow_hallway_loop_indexed.bag/fast:
 .PHONY : amcl_texas_willow_hallway_loop_indexed.bag/fast
 
 # Convenience name for target.
-amcl/CMakeFiles/amcl_pf.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/amcl_pf.dir/rule
-.PHONY : amcl/CMakeFiles/amcl_pf.dir/rule
+amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+.PHONY : amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-amcl_pf: amcl/CMakeFiles/amcl_pf.dir/rule
+topic_tools_generate_messages_cpp: amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
 
-.PHONY : amcl_pf
+.PHONY : topic_tools_generate_messages_cpp
 
 # fast build rule for target.
-amcl_pf/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_pf.dir/build.make amcl/CMakeFiles/amcl_pf.dir/build
-.PHONY : amcl_pf/fast
+topic_tools_generate_messages_cpp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make amcl/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+.PHONY : topic_tools_generate_messages_cpp/fast
 
 # Convenience name for target.
-amcl/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : amcl/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+amcl/CMakeFiles/amcl_global_localization_stage_indexed.bag.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/amcl_global_localization_stage_indexed.bag.dir/rule
+.PHONY : amcl/CMakeFiles/amcl_global_localization_stage_indexed.bag.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_cpp: amcl/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+amcl_global_localization_stage_indexed.bag: amcl/CMakeFiles/amcl_global_localization_stage_indexed.bag.dir/rule
 
-.PHONY : std_srvs_generate_messages_cpp
+.PHONY : amcl_global_localization_stage_indexed.bag
 
 # fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make amcl/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
+amcl_global_localization_stage_indexed.bag/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_global_localization_stage_indexed.bag.dir/build.make amcl/CMakeFiles/amcl_global_localization_stage_indexed.bag.dir/build
+.PHONY : amcl_global_localization_stage_indexed.bag/fast
 
 # Convenience name for target.
 amcl/CMakeFiles/amcl_small_loop_crazy_driving_prg_indexed.bag.dir/rule:
@@ -766,6 +586,21 @@ amcl_rosie_localization_stage.bag: amcl/CMakeFiles/amcl_rosie_localization_stage
 amcl_rosie_localization_stage.bag/fast:
 	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_rosie_localization_stage.bag.dir/build.make amcl/CMakeFiles/amcl_rosie_localization_stage.bag.dir/build
 .PHONY : amcl_rosie_localization_stage.bag/fast
+
+# Convenience name for target.
+amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
+.PHONY : amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
+
+# Convenience name for target.
+_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml: amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
+
+.PHONY : _run_tests_amcl_rostest_test_set_initial_pose_delayed.xml
+
+# fast build rule for target.
+_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/build.make amcl/CMakeFiles/_run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/build
+.PHONY : _run_tests_amcl_rostest_test_set_initial_pose_delayed.xml/fast
 
 # Convenience name for target.
 amcl/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule:
@@ -916,6 +751,96 @@ clean_test_results_amcl: amcl/CMakeFiles/clean_test_results_amcl.dir/rule
 clean_test_results_amcl/fast:
 	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/clean_test_results_amcl.dir/build.make amcl/CMakeFiles/clean_test_results_amcl.dir/build
 .PHONY : clean_test_results_amcl/fast
+
+# Convenience name for target.
+amcl/CMakeFiles/amcl_willow-full-0.05.pgm.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/amcl_willow-full-0.05.pgm.dir/rule
+.PHONY : amcl/CMakeFiles/amcl_willow-full-0.05.pgm.dir/rule
+
+# Convenience name for target.
+amcl_willow-full-0.05.pgm: amcl/CMakeFiles/amcl_willow-full-0.05.pgm.dir/rule
+
+.PHONY : amcl_willow-full-0.05.pgm
+
+# fast build rule for target.
+amcl_willow-full-0.05.pgm/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_willow-full-0.05.pgm.dir/build.make amcl/CMakeFiles/amcl_willow-full-0.05.pgm.dir/build
+.PHONY : amcl_willow-full-0.05.pgm/fast
+
+# Convenience name for target.
+amcl/CMakeFiles/run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
+.PHONY : amcl/CMakeFiles/run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
+
+# Convenience name for target.
+run_tests_amcl_rostest_test_set_initial_pose_delayed.xml: amcl/CMakeFiles/run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/rule
+
+.PHONY : run_tests_amcl_rostest_test_set_initial_pose_delayed.xml
+
+# fast build rule for target.
+run_tests_amcl_rostest_test_set_initial_pose_delayed.xml/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/build.make amcl/CMakeFiles/run_tests_amcl_rostest_test_set_initial_pose_delayed.xml.dir/build
+.PHONY : run_tests_amcl_rostest_test_set_initial_pose_delayed.xml/fast
+
+# Convenience name for target.
+amcl/CMakeFiles/run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
+.PHONY : amcl/CMakeFiles/run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
+
+# Convenience name for target.
+run_tests_amcl_rostest_test_basic_localization_stage.xml: amcl/CMakeFiles/run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
+
+.PHONY : run_tests_amcl_rostest_test_basic_localization_stage.xml
+
+# fast build rule for target.
+run_tests_amcl_rostest_test_basic_localization_stage.xml/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/build.make amcl/CMakeFiles/run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/build
+.PHONY : run_tests_amcl_rostest_test_basic_localization_stage.xml/fast
+
+# Convenience name for target.
+amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
+.PHONY : amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
+
+# Convenience name for target.
+_run_tests_amcl_rostest_test_basic_localization_stage.xml: amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/rule
+
+.PHONY : _run_tests_amcl_rostest_test_basic_localization_stage.xml
+
+# fast build rule for target.
+_run_tests_amcl_rostest_test_basic_localization_stage.xml/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/build.make amcl/CMakeFiles/_run_tests_amcl_rostest_test_basic_localization_stage.xml.dir/build
+.PHONY : _run_tests_amcl_rostest_test_basic_localization_stage.xml/fast
+
+# Convenience name for target.
+amcl/CMakeFiles/amcl_gencfg.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/amcl_gencfg.dir/rule
+.PHONY : amcl/CMakeFiles/amcl_gencfg.dir/rule
+
+# Convenience name for target.
+amcl_gencfg: amcl/CMakeFiles/amcl_gencfg.dir/rule
+
+.PHONY : amcl_gencfg
+
+# fast build rule for target.
+amcl_gencfg/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/amcl_gencfg.dir/build.make amcl/CMakeFiles/amcl_gencfg.dir/build
+.PHONY : amcl_gencfg/fast
+
+# Convenience name for target.
+amcl/CMakeFiles/run_tests_amcl_rostest_test_small_loop_prf.xml.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 amcl/CMakeFiles/run_tests_amcl_rostest_test_small_loop_prf.xml.dir/rule
+.PHONY : amcl/CMakeFiles/run_tests_amcl_rostest_test_small_loop_prf.xml.dir/rule
+
+# Convenience name for target.
+run_tests_amcl_rostest_test_small_loop_prf.xml: amcl/CMakeFiles/run_tests_amcl_rostest_test_small_loop_prf.xml.dir/rule
+
+.PHONY : run_tests_amcl_rostest_test_small_loop_prf.xml
+
+# fast build rule for target.
+run_tests_amcl_rostest_test_small_loop_prf.xml/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f amcl/CMakeFiles/run_tests_amcl_rostest_test_small_loop_prf.xml.dir/build.make amcl/CMakeFiles/run_tests_amcl_rostest_test_small_loop_prf.xml.dir/build
+.PHONY : run_tests_amcl_rostest_test_small_loop_prf.xml/fast
 
 src/amcl/map/map.o: src/amcl/map/map.c.o
 
@@ -1329,52 +1254,40 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... install"
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... _run_tests_amcl_rostest_test_rosie_multilaser.xml"
 	@echo "... run_tests_amcl_rostest_test_rosie_multilaser.xml"
+	@echo "... _run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml"
+	@echo "... run_tests_amcl_rostest_test_texas_greenroom_loop.xml"
 	@echo "... _run_tests_amcl_rostest_test_small_loop_crazy_driving_prg.xml"
 	@echo "... run_tests_amcl_rostest_test_small_loop_crazy_driving_prg.xml"
 	@echo "... _run_tests_amcl_rostest_test_small_loop_prf.xml"
-	@echo "... _run_tests_amcl_rostest_test_basic_localization_stage.xml"
-	@echo "... list_install_components"
-	@echo "... run_tests_amcl_rostest_test_basic_localization_stage.xml"
-	@echo "... rebuild_cache"
-	@echo "... _run_tests_amcl_rostest_test_set_initial_pose_delayed.xml"
-	@echo "... run_tests_amcl_rostest_test_small_loop_prf.xml"
-	@echo "... amcl_gencfg"
+	@echo "... amcl_basic_localization_stage_indexed.bag"
+	@echo "... amcl_sensors"
+	@echo "... amcl_pf"
 	@echo "... amcl_small_loop_prf_indexed.bag"
+	@echo "... run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml"
+	@echo "... topic_tools_generate_messages_lisp"
+	@echo "... _run_tests_amcl_rostest_test_texas_greenroom_loop.xml"
+	@echo "... topic_tools_generate_messages_py"
+	@echo "... run_tests_amcl_rostest"
 	@echo "... topic_tools_generate_messages_eus"
-	@echo "... _run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml"
-	@echo "... run_tests_amcl_rostest_test_texas_greenroom_loop.xml"
-	@echo "... std_srvs_generate_messages_py"
 	@echo "... diagnostic_msgs_generate_messages_eus"
 	@echo "... diagnostic_msgs_generate_messages_cpp"
 	@echo "... amcl_texas_greenroom_loop_indexed.bag"
 	@echo "... diagnostic_msgs_generate_messages_lisp"
-	@echo "... run_tests_amcl_rostest_test_texas_willow_hallway_loop.xml"
-	@echo "... topic_tools_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... install/local"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... _run_tests_amcl_rostest_test_texas_greenroom_loop.xml"
-	@echo "... run_tests_amcl_rostest"
-	@echo "... topic_tools_generate_messages_py"
-	@echo "... amcl_sensors"
-	@echo "... amcl_basic_localization_stage_indexed.bag"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... run_tests_amcl_rostest_test_set_initial_pose_delayed.xml"
-	@echo "... amcl_willow-full-0.05.pgm"
-	@echo "... topic_tools_generate_messages_cpp"
-	@echo "... amcl_global_localization_stage_indexed.bag"
 	@echo "... diagnostic_msgs_generate_messages_nodejs"
 	@echo "... amcl_texas_willow_hallway_loop_indexed.bag"
-	@echo "... amcl_pf"
-	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... topic_tools_generate_messages_cpp"
+	@echo "... amcl_global_localization_stage_indexed.bag"
 	@echo "... amcl_small_loop_crazy_driving_prg_indexed.bag"
 	@echo "... amcl_map"
 	@echo "... amcl_rosie_localization_stage.bag"
+	@echo "... rebuild_cache"
+	@echo "... _run_tests_amcl_rostest_test_set_initial_pose_delayed.xml"
 	@echo "... topic_tools_generate_messages_nodejs"
 	@echo "... amcl_willow-full.pgm"
 	@echo "... amcl"
@@ -1385,6 +1298,13 @@ help:
 	@echo "... _run_tests_amcl_rostest_test_set_initial_pose.xml"
 	@echo "... _run_tests_amcl"
 	@echo "... clean_test_results_amcl"
+	@echo "... amcl_willow-full-0.05.pgm"
+	@echo "... run_tests_amcl_rostest_test_set_initial_pose_delayed.xml"
+	@echo "... list_install_components"
+	@echo "... run_tests_amcl_rostest_test_basic_localization_stage.xml"
+	@echo "... _run_tests_amcl_rostest_test_basic_localization_stage.xml"
+	@echo "... amcl_gencfg"
+	@echo "... run_tests_amcl_rostest_test_small_loop_prf.xml"
 	@echo "... src/amcl/map/map.o"
 	@echo "... src/amcl/map/map.i"
 	@echo "... src/amcl/map/map.s"
