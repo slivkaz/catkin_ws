@@ -26,7 +26,7 @@
     <color rgba="1.0 1.0 1.0 1.0"/>
   </material>
   
-  <gazebo reference="link_chassis">
+  <gazebo reference="base_link">
     <material>Gazebo/White</material>
   </gazebo>
   <gazebo reference="link_left_wheel">
@@ -63,7 +63,7 @@
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
-      <robotBaseFrame>link_chassis</robotBaseFrame>
+      <robotBaseFrame>base_link</robotBaseFrame>
     </plugin>
   </gazebo>
 
@@ -118,7 +118,7 @@
     </sensor>
   </gazebo>
 
-  <link name="link_chassis">
+  <link name="base_link">
     <!-- pose and inertial -->
     <pose>0 0 0.1 0 0 0</pose>
     <inertial>
@@ -183,7 +183,7 @@
 
     <joint name="joint_camera" type="fixed">
     <origin xyz="0.23 -0.06 0.11" rpy="0 0 0"/>
-    <parent link="link_chassis"/>
+    <parent link="base_link"/>
     <child link="camera_link"/>
   </joint>
 
@@ -201,7 +201,7 @@
   <joint name="camera_link_joint" type="fixed">
         <origin xyz="0 0 0.6"
                 rpy="0 0 0" />
-        <parent link="link_chassis"/>
+        <parent link="base_link"/>
         <child link="camera_link"/>
     </joint>
 
@@ -229,7 +229,7 @@
   <joint name="joint_right_wheel" type="continuous">
     <origin rpy="0 0 0" xyz="0 0.30 -0.23"/>
     <child link="link_right_wheel"/>
-    <parent link="link_chassis"/>
+    <parent link="base_link"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
     <limit effort="10000" velocity="1000"/>
     <joint_properties damping="1.0" friction="1.0"/>
@@ -258,7 +258,7 @@
   <joint name="joint_left_wheel" type="continuous">
     <origin rpy="0 0 0" xyz="0 -0.30 -0.23"/>
     <child link="link_left_wheel"/>
-    <parent link="link_chassis"/>
+    <parent link="base_link"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
     <limit effort="10000" velocity="1000"/>
     <joint_properties damping="1.0" friction="1.0"/>
@@ -287,7 +287,7 @@
   <joint name="joint_front_wheel" type="continuous">
     <origin rpy="0 0 0" xyz="0.3 0 -0.28"/>
     <child link="link_front_wheel"/>
-    <parent link="link_chassis"/>
+    <parent link="base_link"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
     <limit effort="10000" velocity="1000"/>
     <joint_properties damping="1.0" friction="1.0"/>
@@ -316,7 +316,7 @@
   <joint name="joint_back_wheel" type="continuous">
     <origin rpy="0 0 0" xyz="-0.35 0 -0.28"/>
     <child link="link_back_wheel"/>
-    <parent link="link_chassis"/>
+    <parent link="base_link"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
     <limit effort="10000" velocity="1000"/>
     <joint_properties damping="1.0" friction="1.0"/>

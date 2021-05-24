@@ -183,21 +183,6 @@ rtabmap_costmap_plugins2/fast:
 .PHONY : rtabmap_costmap_plugins2/fast
 
 # Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_costmap_plugins.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_costmap_plugins.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_costmap_plugins.dir/rule
-
-# Convenience name for target.
-rtabmap_costmap_plugins: rtabmap_ros/CMakeFiles/rtabmap_costmap_plugins.dir/rule
-
-.PHONY : rtabmap_costmap_plugins
-
-# fast build rule for target.
-rtabmap_costmap_plugins/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_costmap_plugins.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_costmap_plugins.dir/build
-.PHONY : rtabmap_costmap_plugins/fast
-
-# Convenience name for target.
 rtabmap_ros/CMakeFiles/rtabmap_rviz_plugins.dir/rule:
 	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_rviz_plugins.dir/rule
 .PHONY : rtabmap_ros/CMakeFiles/rtabmap_rviz_plugins.dir/rule
@@ -363,349 +348,34 @@ rtabmap_rgb_sync/fast:
 .PHONY : rtabmap_rgb_sync/fast
 
 # Convenience name for target.
-rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Point2f.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Point2f.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Point2f.dir/rule
+rtabmap_ros/CMakeFiles/rtabmap_save_objects_example.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_save_objects_example.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_save_objects_example.dir/rule
 
 # Convenience name for target.
-_rtabmap_ros_generate_messages_check_deps_Point2f: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Point2f.dir/rule
+rtabmap_save_objects_example: rtabmap_ros/CMakeFiles/rtabmap_save_objects_example.dir/rule
 
-.PHONY : _rtabmap_ros_generate_messages_check_deps_Point2f
+.PHONY : rtabmap_save_objects_example
 
 # fast build rule for target.
-_rtabmap_ros_generate_messages_check_deps_Point2f/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Point2f.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Point2f.dir/build
-.PHONY : _rtabmap_ros_generate_messages_check_deps_Point2f/fast
+rtabmap_save_objects_example/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_save_objects_example.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_save_objects_example.dir/build
+.PHONY : rtabmap_save_objects_example/fast
 
 # Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_map_assembler.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_map_assembler.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_map_assembler.dir/rule
+rtabmap_ros/CMakeFiles/rtabmap_stereo_sync.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_stereo_sync.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_stereo_sync.dir/rule
 
 # Convenience name for target.
-rtabmap_map_assembler: rtabmap_ros/CMakeFiles/rtabmap_map_assembler.dir/rule
+rtabmap_stereo_sync: rtabmap_ros/CMakeFiles/rtabmap_stereo_sync.dir/rule
 
-.PHONY : rtabmap_map_assembler
+.PHONY : rtabmap_stereo_sync
 
 # fast build rule for target.
-rtabmap_map_assembler/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_map_assembler.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_map_assembler.dir/build
-.PHONY : rtabmap_map_assembler/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Goal.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Goal.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Goal.dir/rule
-
-# Convenience name for target.
-_rtabmap_ros_generate_messages_check_deps_Goal: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Goal.dir/rule
-
-.PHONY : _rtabmap_ros_generate_messages_check_deps_Goal
-
-# fast build rule for target.
-_rtabmap_ros_generate_messages_check_deps_Goal/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Goal.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Goal.dir/build
-.PHONY : _rtabmap_ros_generate_messages_check_deps_Goal/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_MapData.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_MapData.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_MapData.dir/rule
-
-# Convenience name for target.
-_rtabmap_ros_generate_messages_check_deps_MapData: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_MapData.dir/rule
-
-.PHONY : _rtabmap_ros_generate_messages_check_deps_MapData
-
-# fast build rule for target.
-_rtabmap_ros_generate_messages_check_deps_MapData/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_MapData.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_MapData.dir/build
-.PHONY : _rtabmap_ros_generate_messages_check_deps_MapData/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-octomap_msgs_generate_messages_nodejs: rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : octomap_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-octomap_msgs_generate_messages_nodejs/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build
-.PHONY : octomap_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_py.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_py.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_py.dir/rule
-
-# Convenience name for target.
-find_object_2d_generate_messages_py: rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_py.dir/rule
-
-.PHONY : find_object_2d_generate_messages_py
-
-# fast build rule for target.
-find_object_2d_generate_messages_py/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_py.dir/build.make rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_py.dir/build
-.PHONY : find_object_2d_generate_messages_py/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GPS.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GPS.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GPS.dir/rule
-
-# Convenience name for target.
-_rtabmap_ros_generate_messages_check_deps_GPS: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GPS.dir/rule
-
-.PHONY : _rtabmap_ros_generate_messages_check_deps_GPS
-
-# fast build rule for target.
-_rtabmap_ros_generate_messages_check_deps_GPS/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GPS.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GPS.dir/build
-.PHONY : _rtabmap_ros_generate_messages_check_deps_GPS/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-octomap_msgs_generate_messages_cpp: rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : octomap_msgs_generate_messages_cpp
-
-# fast build rule for target.
-octomap_msgs_generate_messages_cpp/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
-.PHONY : octomap_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rtabmap_ros_generate_messages_nodejs: rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/rule
-
-.PHONY : rtabmap_ros_generate_messages_nodejs
-
-# fast build rule for target.
-rtabmap_ros_generate_messages_nodejs/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/build
-.PHONY : rtabmap_ros_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Info.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Info.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Info.dir/rule
-
-# Convenience name for target.
-_rtabmap_ros_generate_messages_check_deps_Info: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Info.dir/rule
-
-.PHONY : _rtabmap_ros_generate_messages_check_deps_Info
-
-# fast build rule for target.
-_rtabmap_ros_generate_messages_check_deps_Info/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Info.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Info.dir/build
-.PHONY : _rtabmap_ros_generate_messages_check_deps_Info/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Link.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Link.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Link.dir/rule
-
-# Convenience name for target.
-_rtabmap_ros_generate_messages_check_deps_Link: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Link.dir/rule
-
-.PHONY : _rtabmap_ros_generate_messages_check_deps_Link
-
-# fast build rule for target.
-_rtabmap_ros_generate_messages_check_deps_Link/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Link.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Link.dir/build
-.PHONY : _rtabmap_ros_generate_messages_check_deps_Link/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rviz_generate_messages_py.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rviz_generate_messages_py.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rviz_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rviz_generate_messages_py: rtabmap_ros/CMakeFiles/rviz_generate_messages_py.dir/rule
-
-.PHONY : rviz_generate_messages_py
-
-# fast build rule for target.
-rviz_generate_messages_py/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rviz_generate_messages_py.dir/build.make rtabmap_ros/CMakeFiles/rviz_generate_messages_py.dir/build
-.PHONY : rviz_generate_messages_py/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_ros.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_ros.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_ros.dir/rule
-
-# Convenience name for target.
-rtabmap_ros: rtabmap_ros/CMakeFiles/rtabmap_ros.dir/rule
-
-.PHONY : rtabmap_ros
-
-# fast build rule for target.
-rtabmap_ros/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_ros.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_ros.dir/build
-.PHONY : rtabmap_ros/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_SetGoal.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_SetGoal.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_SetGoal.dir/rule
-
-# Convenience name for target.
-_rtabmap_ros_generate_messages_check_deps_SetGoal: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_SetGoal.dir/rule
-
-.PHONY : _rtabmap_ros_generate_messages_check_deps_SetGoal
-
-# fast build rule for target.
-_rtabmap_ros_generate_messages_check_deps_SetGoal/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_SetGoal.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_SetGoal.dir/build
-.PHONY : _rtabmap_ros_generate_messages_check_deps_SetGoal/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmapviz.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmapviz.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmapviz.dir/rule
-
-# Convenience name for target.
-rtabmapviz: rtabmap_ros/CMakeFiles/rtabmapviz.dir/rule
-
-.PHONY : rtabmapviz
-
-# fast build rule for target.
-rtabmapviz/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmapviz.dir/build.make rtabmap_ros/CMakeFiles/rtabmapviz.dir/build
-.PHONY : rtabmapviz/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rviz_generate_messages_eus.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rviz_generate_messages_eus.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rviz_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rviz_generate_messages_eus: rtabmap_ros/CMakeFiles/rviz_generate_messages_eus.dir/rule
-
-.PHONY : rviz_generate_messages_eus
-
-# fast build rule for target.
-rviz_generate_messages_eus/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rviz_generate_messages_eus.dir/build.make rtabmap_ros/CMakeFiles/rviz_generate_messages_eus.dir/build
-.PHONY : rviz_generate_messages_eus/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-pcl_msgs_generate_messages_nodejs: rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : pcl_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-pcl_msgs_generate_messages_nodejs/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build
-.PHONY : pcl_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-stereo_msgs_generate_messages_lisp: rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : stereo_msgs_generate_messages_lisp
-
-# fast build rule for target.
-stereo_msgs_generate_messages_lisp/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/build.make rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/build
-.PHONY : stereo_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-octomap_msgs_generate_messages_py: rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
-
-.PHONY : octomap_msgs_generate_messages_py
-
-# fast build rule for target.
-octomap_msgs_generate_messages_py/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_py.dir/build
-.PHONY : octomap_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap.dir/rule
-
-# Convenience name for target.
-_rtabmap_ros_generate_messages_check_deps_GetMap: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap.dir/rule
-
-.PHONY : _rtabmap_ros_generate_messages_check_deps_GetMap
-
-# fast build rule for target.
-_rtabmap_ros_generate_messages_check_deps_GetMap/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap.dir/build
-.PHONY : _rtabmap_ros_generate_messages_check_deps_GetMap/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_cpp.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_cpp.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-find_object_2d_generate_messages_cpp: rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_cpp.dir/rule
-
-.PHONY : find_object_2d_generate_messages_cpp
-
-# fast build rule for target.
-find_object_2d_generate_messages_cpp/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_cpp.dir/build.make rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_cpp.dir/build
-.PHONY : find_object_2d_generate_messages_cpp/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_py.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_py.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-stereo_msgs_generate_messages_py: rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_py.dir/rule
-
-.PHONY : stereo_msgs_generate_messages_py
-
-# fast build rule for target.
-stereo_msgs_generate_messages_py/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_py.dir/build.make rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_py.dir/build
-.PHONY : stereo_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-pcl_msgs_generate_messages_lisp: rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : pcl_msgs_generate_messages_lisp
-
-# fast build rule for target.
-pcl_msgs_generate_messages_lisp/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
-.PHONY : pcl_msgs_generate_messages_lisp/fast
+rtabmap_stereo_sync/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_stereo_sync.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_stereo_sync.dir/build
+.PHONY : rtabmap_stereo_sync/fast
 
 # Convenience name for target.
 rtabmap_ros/CMakeFiles/rtabmap_rgbd_sync.dir/rule:
@@ -723,79 +393,19 @@ rtabmap_rgbd_sync/fast:
 .PHONY : rtabmap_rgbd_sync/fast
 
 # Convenience name for target.
-rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
+rtabmap_ros/CMakeFiles/rtabmap_icp_odometry.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_icp_odometry.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_icp_odometry.dir/rule
 
 # Convenience name for target.
-pcl_msgs_generate_messages_cpp: rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
+rtabmap_icp_odometry: rtabmap_ros/CMakeFiles/rtabmap_icp_odometry.dir/rule
 
-.PHONY : pcl_msgs_generate_messages_cpp
+.PHONY : rtabmap_icp_odometry
 
 # fast build rule for target.
-pcl_msgs_generate_messages_cpp/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
-.PHONY : pcl_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-pcl_msgs_generate_messages_py: rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
-
-.PHONY : pcl_msgs_generate_messages_py
-
-# fast build rule for target.
-pcl_msgs_generate_messages_py/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
-.PHONY : pcl_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_plugins.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_plugins.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_plugins.dir/rule
-
-# Convenience name for target.
-rtabmap_plugins: rtabmap_ros/CMakeFiles/rtabmap_plugins.dir/rule
-
-.PHONY : rtabmap_plugins
-
-# fast build rule for target.
-rtabmap_plugins/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_plugins.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_plugins.dir/build
-.PHONY : rtabmap_plugins/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-pcl_msgs_generate_messages_eus: rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
-
-.PHONY : pcl_msgs_generate_messages_eus
-
-# fast build rule for target.
-pcl_msgs_generate_messages_eus/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build
-.PHONY : pcl_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
-
-# Convenience name for target.
-nodelet_topic_tools_gencfg: rtabmap_ros/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
-
-.PHONY : nodelet_topic_tools_gencfg
-
-# fast build rule for target.
-nodelet_topic_tools_gencfg/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/nodelet_topic_tools_gencfg.dir/build.make rtabmap_ros/CMakeFiles/nodelet_topic_tools_gencfg.dir/build
-.PHONY : nodelet_topic_tools_gencfg/fast
+rtabmap_icp_odometry/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_icp_odometry.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_icp_odometry.dir/build
+.PHONY : rtabmap_icp_odometry/fast
 
 # Convenience name for target.
 rtabmap_ros/CMakeFiles/rtabmap_rgbd_odometry.dir/rule:
@@ -813,49 +423,139 @@ rtabmap_rgbd_odometry/fast:
 .PHONY : rtabmap_rgbd_odometry/fast
 
 # Convenience name for target.
-rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_nodejs.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_nodejs.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_nodejs.dir/rule
+rtabmap_ros/CMakeFiles/rtabmap.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap.dir/rule
 
 # Convenience name for target.
-find_object_2d_generate_messages_nodejs: rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_nodejs.dir/rule
+rtabmap: rtabmap_ros/CMakeFiles/rtabmap.dir/rule
 
-.PHONY : find_object_2d_generate_messages_nodejs
+.PHONY : rtabmap
 
 # fast build rule for target.
-find_object_2d_generate_messages_nodejs/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_nodejs.dir/build.make rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_nodejs.dir/build
-.PHONY : find_object_2d_generate_messages_nodejs/fast
+rtabmap/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap.dir/build.make rtabmap_ros/CMakeFiles/rtabmap.dir/build
+.PHONY : rtabmap/fast
 
 # Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages.dir/rule
+rtabmap_ros/CMakeFiles/rtabmap_ros.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_ros.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_ros.dir/rule
 
 # Convenience name for target.
-rtabmap_ros_generate_messages: rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages.dir/rule
+rtabmap_ros: rtabmap_ros/CMakeFiles/rtabmap_ros.dir/rule
 
-.PHONY : rtabmap_ros_generate_messages
+.PHONY : rtabmap_ros
 
 # fast build rule for target.
-rtabmap_ros_generate_messages/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages.dir/build
-.PHONY : rtabmap_ros_generate_messages/fast
+rtabmap_ros/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_ros.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_ros.dir/build
+.PHONY : rtabmap_ros/fast
 
 # Convenience name for target.
-rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/rule
+rtabmap_ros/CMakeFiles/rviz_generate_messages_py.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rviz_generate_messages_py.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rviz_generate_messages_py.dir/rule
 
 # Convenience name for target.
-stereo_msgs_generate_messages_cpp: rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/rule
+rviz_generate_messages_py: rtabmap_ros/CMakeFiles/rviz_generate_messages_py.dir/rule
 
-.PHONY : stereo_msgs_generate_messages_cpp
+.PHONY : rviz_generate_messages_py
 
 # fast build rule for target.
-stereo_msgs_generate_messages_cpp/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/build.make rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/build
-.PHONY : stereo_msgs_generate_messages_cpp/fast
+rviz_generate_messages_py/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rviz_generate_messages_py.dir/build.make rtabmap_ros/CMakeFiles/rviz_generate_messages_py.dir/build
+.PHONY : rviz_generate_messages_py/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/rtabmap_costmap_plugins.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_costmap_plugins.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_costmap_plugins.dir/rule
+
+# Convenience name for target.
+rtabmap_costmap_plugins: rtabmap_ros/CMakeFiles/rtabmap_costmap_plugins.dir/rule
+
+.PHONY : rtabmap_costmap_plugins
+
+# fast build rule for target.
+rtabmap_costmap_plugins/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_costmap_plugins.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_costmap_plugins.dir/build
+.PHONY : rtabmap_costmap_plugins/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_lisp: rtabmap_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+.PHONY : nodelet_generate_messages_lisp
+
+# fast build rule for target.
+nodelet_generate_messages_lisp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make rtabmap_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/build
+.PHONY : nodelet_generate_messages_lisp/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_py.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_py.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_py.dir/rule
+
+# Convenience name for target.
+find_object_2d_generate_messages_py: rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_py.dir/rule
+
+.PHONY : find_object_2d_generate_messages_py
+
+# fast build rule for target.
+find_object_2d_generate_messages_py/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_py.dir/build.make rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_py.dir/build
+.PHONY : find_object_2d_generate_messages_py/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rtabmap_ros_generate_messages_nodejs: rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/rule
+
+.PHONY : rtabmap_ros_generate_messages_nodejs
+
+# fast build rule for target.
+rtabmap_ros_generate_messages_nodejs/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_nodejs.dir/build
+.PHONY : rtabmap_ros_generate_messages_nodejs/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/rtabmap_sync.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_sync.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_sync.dir/rule
+
+# Convenience name for target.
+rtabmap_sync: rtabmap_ros/CMakeFiles/rtabmap_sync.dir/rule
+
+.PHONY : rtabmap_sync
+
+# fast build rule for target.
+rtabmap_sync/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_sync.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_sync.dir/build
+.PHONY : rtabmap_sync/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/bond_generate_messages_cpp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/bond_generate_messages_cpp.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_cpp: rtabmap_ros/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+.PHONY : bond_generate_messages_cpp
+
+# fast build rule for target.
+bond_generate_messages_cpp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/bond_generate_messages_cpp.dir/build.make rtabmap_ros/CMakeFiles/bond_generate_messages_cpp.dir/build
+.PHONY : bond_generate_messages_cpp/fast
 
 # Convenience name for target.
 rtabmap_ros/CMakeFiles/rviz_generate_messages_nodejs.dir/rule:
@@ -888,34 +588,64 @@ rtabmap_ros_gencpp/fast:
 .PHONY : rtabmap_ros_gencpp/fast
 
 # Convenience name for target.
-rtabmap_ros/CMakeFiles/pcl_ros_gencfg.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/pcl_ros_gencfg.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/pcl_ros_gencfg.dir/rule
+rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-pcl_ros_gencfg: rtabmap_ros/CMakeFiles/pcl_ros_gencfg.dir/rule
+octomap_msgs_generate_messages_nodejs: rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : pcl_ros_gencfg
+.PHONY : octomap_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-pcl_ros_gencfg/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/pcl_ros_gencfg.dir/build.make rtabmap_ros/CMakeFiles/pcl_ros_gencfg.dir/build
-.PHONY : pcl_ros_gencfg/fast
+octomap_msgs_generate_messages_nodejs/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build.make rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/build
+.PHONY : octomap_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_eus.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_eus.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_eus.dir/rule
+rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_MapData.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_MapData.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_MapData.dir/rule
 
 # Convenience name for target.
-rtabmap_ros_generate_messages_eus: rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_eus.dir/rule
+_rtabmap_ros_generate_messages_check_deps_MapData: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_MapData.dir/rule
 
-.PHONY : rtabmap_ros_generate_messages_eus
+.PHONY : _rtabmap_ros_generate_messages_check_deps_MapData
 
 # fast build rule for target.
-rtabmap_ros_generate_messages_eus/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_eus.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_eus.dir/build
-.PHONY : rtabmap_ros_generate_messages_eus/fast
+_rtabmap_ros_generate_messages_check_deps_MapData/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_MapData.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_MapData.dir/build
+.PHONY : _rtabmap_ros_generate_messages_check_deps_MapData/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_lisp: rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_lisp
+
+# fast build rule for target.
+octomap_msgs_generate_messages_lisp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
+.PHONY : octomap_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+stereo_msgs_generate_messages_nodejs: rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : stereo_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+stereo_msgs_generate_messages_nodejs/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/build.make rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/build
+.PHONY : stereo_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_eus.dir/rule:
@@ -1008,34 +738,559 @@ _rtabmap_ros_generate_messages_check_deps_UserData/fast:
 .PHONY : _rtabmap_ros_generate_messages_check_deps_UserData/fast
 
 # Convenience name for target.
-rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/rule
+rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_eus.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_eus.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-stereo_msgs_generate_messages_nodejs: rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/rule
+rtabmap_ros_generate_messages_eus: rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_eus.dir/rule
 
-.PHONY : stereo_msgs_generate_messages_nodejs
+.PHONY : rtabmap_ros_generate_messages_eus
 
 # fast build rule for target.
-stereo_msgs_generate_messages_nodejs/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/build.make rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_nodejs.dir/build
-.PHONY : stereo_msgs_generate_messages_nodejs/fast
+rtabmap_ros_generate_messages_eus/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_eus.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages_eus.dir/build
+.PHONY : rtabmap_ros_generate_messages_eus/fast
 
 # Convenience name for target.
-rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+rtabmap_ros/CMakeFiles/pcl_ros_gencfg.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/pcl_ros_gencfg.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/pcl_ros_gencfg.dir/rule
 
 # Convenience name for target.
-octomap_msgs_generate_messages_lisp: rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+pcl_ros_gencfg: rtabmap_ros/CMakeFiles/pcl_ros_gencfg.dir/rule
 
-.PHONY : octomap_msgs_generate_messages_lisp
+.PHONY : pcl_ros_gencfg
 
 # fast build rule for target.
-octomap_msgs_generate_messages_lisp/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
-.PHONY : octomap_msgs_generate_messages_lisp/fast
+pcl_ros_gencfg/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/pcl_ros_gencfg.dir/build.make rtabmap_ros/CMakeFiles/pcl_ros_gencfg.dir/build
+.PHONY : pcl_ros_gencfg/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+pcl_msgs_generate_messages_nodejs: rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : pcl_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+pcl_msgs_generate_messages_nodejs/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build
+.PHONY : pcl_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_nodejs: rtabmap_ros/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
+
+.PHONY : nodelet_generate_messages_nodejs
+
+# fast build rule for target.
+nodelet_generate_messages_nodejs/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make rtabmap_ros/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
+.PHONY : nodelet_generate_messages_nodejs/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/bond_generate_messages_eus.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/bond_generate_messages_eus.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/bond_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_eus: rtabmap_ros/CMakeFiles/bond_generate_messages_eus.dir/rule
+
+.PHONY : bond_generate_messages_eus
+
+# fast build rule for target.
+bond_generate_messages_eus/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/bond_generate_messages_eus.dir/build.make rtabmap_ros/CMakeFiles/bond_generate_messages_eus.dir/build
+.PHONY : bond_generate_messages_eus/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/rtabmap_costmap_voxel_markers.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_costmap_voxel_markers.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_costmap_voxel_markers.dir/rule
+
+# Convenience name for target.
+rtabmap_costmap_voxel_markers: rtabmap_ros/CMakeFiles/rtabmap_costmap_voxel_markers.dir/rule
+
+.PHONY : rtabmap_costmap_voxel_markers
+
+# fast build rule for target.
+rtabmap_costmap_voxel_markers/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_costmap_voxel_markers.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_costmap_voxel_markers.dir/build
+.PHONY : rtabmap_costmap_voxel_markers/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/rtabmap_rgbdicp_odometry.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_rgbdicp_odometry.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_rgbdicp_odometry.dir/rule
+
+# Convenience name for target.
+rtabmap_rgbdicp_odometry: rtabmap_ros/CMakeFiles/rtabmap_rgbdicp_odometry.dir/rule
+
+.PHONY : rtabmap_rgbdicp_odometry
+
+# fast build rule for target.
+rtabmap_rgbdicp_odometry/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_rgbdicp_odometry.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_rgbdicp_odometry.dir/build
+.PHONY : rtabmap_rgbdicp_odometry/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/bond_generate_messages_py.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/bond_generate_messages_py.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/bond_generate_messages_py.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_py: rtabmap_ros/CMakeFiles/bond_generate_messages_py.dir/rule
+
+.PHONY : bond_generate_messages_py
+
+# fast build rule for target.
+bond_generate_messages_py/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/bond_generate_messages_py.dir/build.make rtabmap_ros/CMakeFiles/bond_generate_messages_py.dir/build
+.PHONY : bond_generate_messages_py/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/rtabmapviz.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmapviz.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmapviz.dir/rule
+
+# Convenience name for target.
+rtabmapviz: rtabmap_ros/CMakeFiles/rtabmapviz.dir/rule
+
+.PHONY : rtabmapviz
+
+# fast build rule for target.
+rtabmapviz/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmapviz.dir/build.make rtabmap_ros/CMakeFiles/rtabmapviz.dir/build
+.PHONY : rtabmapviz/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/rviz_generate_messages_eus.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rviz_generate_messages_eus.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rviz_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rviz_generate_messages_eus: rtabmap_ros/CMakeFiles/rviz_generate_messages_eus.dir/rule
+
+.PHONY : rviz_generate_messages_eus
+
+# fast build rule for target.
+rviz_generate_messages_eus/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rviz_generate_messages_eus.dir/build.make rtabmap_ros/CMakeFiles/rviz_generate_messages_eus.dir/build
+.PHONY : rviz_generate_messages_eus/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_cpp: rtabmap_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+.PHONY : nodelet_generate_messages_cpp
+
+# fast build rule for target.
+nodelet_generate_messages_cpp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make rtabmap_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/build
+.PHONY : nodelet_generate_messages_cpp/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_cpp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_cpp.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+find_object_2d_generate_messages_cpp: rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_cpp.dir/rule
+
+.PHONY : find_object_2d_generate_messages_cpp
+
+# fast build rule for target.
+find_object_2d_generate_messages_cpp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_cpp.dir/build.make rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_cpp.dir/build
+.PHONY : find_object_2d_generate_messages_cpp/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_py.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_py.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+stereo_msgs_generate_messages_py: rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_py.dir/rule
+
+.PHONY : stereo_msgs_generate_messages_py
+
+# fast build rule for target.
+stereo_msgs_generate_messages_py/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_py.dir/build.make rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_py.dir/build
+.PHONY : stereo_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+pcl_msgs_generate_messages_lisp: rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : pcl_msgs_generate_messages_lisp
+
+# fast build rule for target.
+pcl_msgs_generate_messages_lisp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
+.PHONY : pcl_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+pcl_msgs_generate_messages_cpp: rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : pcl_msgs_generate_messages_cpp
+
+# fast build rule for target.
+pcl_msgs_generate_messages_cpp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
+.PHONY : pcl_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+pcl_msgs_generate_messages_py: rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
+
+.PHONY : pcl_msgs_generate_messages_py
+
+# fast build rule for target.
+pcl_msgs_generate_messages_py/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
+.PHONY : pcl_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/rtabmap_plugins.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_plugins.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_plugins.dir/rule
+
+# Convenience name for target.
+rtabmap_plugins: rtabmap_ros/CMakeFiles/rtabmap_plugins.dir/rule
+
+.PHONY : rtabmap_plugins
+
+# fast build rule for target.
+rtabmap_plugins/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_plugins.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_plugins.dir/build
+.PHONY : rtabmap_plugins/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+pcl_msgs_generate_messages_eus: rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_eus.dir/rule
+
+.PHONY : pcl_msgs_generate_messages_eus
+
+# fast build rule for target.
+pcl_msgs_generate_messages_eus/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make rtabmap_ros/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build
+.PHONY : pcl_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_nodejs.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_nodejs.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+find_object_2d_generate_messages_nodejs: rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_nodejs.dir/rule
+
+.PHONY : find_object_2d_generate_messages_nodejs
+
+# fast build rule for target.
+find_object_2d_generate_messages_nodejs/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_nodejs.dir/build.make rtabmap_ros/CMakeFiles/find_object_2d_generate_messages_nodejs.dir/build
+.PHONY : find_object_2d_generate_messages_nodejs/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
+
+# Convenience name for target.
+nodelet_topic_tools_gencfg: rtabmap_ros/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
+
+.PHONY : nodelet_topic_tools_gencfg
+
+# fast build rule for target.
+nodelet_topic_tools_gencfg/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/nodelet_topic_tools_gencfg.dir/build.make rtabmap_ros/CMakeFiles/nodelet_topic_tools_gencfg.dir/build
+.PHONY : nodelet_topic_tools_gencfg/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/bond_generate_messages_lisp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/bond_generate_messages_lisp.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_lisp: rtabmap_ros/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+.PHONY : bond_generate_messages_lisp
+
+# fast build rule for target.
+bond_generate_messages_lisp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/bond_generate_messages_lisp.dir/build.make rtabmap_ros/CMakeFiles/bond_generate_messages_lisp.dir/build
+.PHONY : bond_generate_messages_lisp/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+stereo_msgs_generate_messages_lisp: rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : stereo_msgs_generate_messages_lisp
+
+# fast build rule for target.
+stereo_msgs_generate_messages_lisp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/build.make rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/build
+.PHONY : stereo_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_py: rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_py
+
+# fast build rule for target.
+octomap_msgs_generate_messages_py/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_py.dir/build
+.PHONY : octomap_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap.dir/rule
+
+# Convenience name for target.
+_rtabmap_ros_generate_messages_check_deps_GetMap: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap.dir/rule
+
+.PHONY : _rtabmap_ros_generate_messages_check_deps_GetMap
+
+# fast build rule for target.
+_rtabmap_ros_generate_messages_check_deps_GetMap/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap.dir/build
+.PHONY : _rtabmap_ros_generate_messages_check_deps_GetMap/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/nodelet_generate_messages_py.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/nodelet_generate_messages_py.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/nodelet_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_py: rtabmap_ros/CMakeFiles/nodelet_generate_messages_py.dir/rule
+
+.PHONY : nodelet_generate_messages_py
+
+# fast build rule for target.
+nodelet_generate_messages_py/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/nodelet_generate_messages_py.dir/build.make rtabmap_ros/CMakeFiles/nodelet_generate_messages_py.dir/build
+.PHONY : nodelet_generate_messages_py/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/bond_generate_messages_nodejs.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_nodejs: rtabmap_ros/CMakeFiles/bond_generate_messages_nodejs.dir/rule
+
+.PHONY : bond_generate_messages_nodejs
+
+# fast build rule for target.
+bond_generate_messages_nodejs/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/bond_generate_messages_nodejs.dir/build.make rtabmap_ros/CMakeFiles/bond_generate_messages_nodejs.dir/build
+.PHONY : bond_generate_messages_nodejs/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap2.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap2.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap2.dir/rule
+
+# Convenience name for target.
+_rtabmap_ros_generate_messages_check_deps_GetMap2: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap2.dir/rule
+
+.PHONY : _rtabmap_ros_generate_messages_check_deps_GetMap2
+
+# fast build rule for target.
+_rtabmap_ros_generate_messages_check_deps_GetMap2/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap2.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap2.dir/build
+.PHONY : _rtabmap_ros_generate_messages_check_deps_GetMap2/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+stereo_msgs_generate_messages_cpp: rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : stereo_msgs_generate_messages_cpp
+
+# fast build rule for target.
+stereo_msgs_generate_messages_cpp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/build.make rtabmap_ros/CMakeFiles/stereo_msgs_generate_messages_cpp.dir/build
+.PHONY : stereo_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages.dir/rule
+
+# Convenience name for target.
+rtabmap_ros_generate_messages: rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages.dir/rule
+
+.PHONY : rtabmap_ros_generate_messages
+
+# fast build rule for target.
+rtabmap_ros_generate_messages/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_ros_generate_messages.dir/build
+.PHONY : rtabmap_ros_generate_messages/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Info.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Info.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Info.dir/rule
+
+# Convenience name for target.
+_rtabmap_ros_generate_messages_check_deps_Info: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Info.dir/rule
+
+.PHONY : _rtabmap_ros_generate_messages_check_deps_Info
+
+# fast build rule for target.
+_rtabmap_ros_generate_messages_check_deps_Info/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Info.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Info.dir/build
+.PHONY : _rtabmap_ros_generate_messages_check_deps_Info/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Link.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Link.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Link.dir/rule
+
+# Convenience name for target.
+_rtabmap_ros_generate_messages_check_deps_Link: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Link.dir/rule
+
+.PHONY : _rtabmap_ros_generate_messages_check_deps_Link
+
+# fast build rule for target.
+_rtabmap_ros_generate_messages_check_deps_Link/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Link.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Link.dir/build
+.PHONY : _rtabmap_ros_generate_messages_check_deps_Link/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_SetGoal.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_SetGoal.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_SetGoal.dir/rule
+
+# Convenience name for target.
+_rtabmap_ros_generate_messages_check_deps_SetGoal: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_SetGoal.dir/rule
+
+.PHONY : _rtabmap_ros_generate_messages_check_deps_SetGoal
+
+# fast build rule for target.
+_rtabmap_ros_generate_messages_check_deps_SetGoal/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_SetGoal.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_SetGoal.dir/build
+.PHONY : _rtabmap_ros_generate_messages_check_deps_SetGoal/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_cpp: rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : octomap_msgs_generate_messages_cpp
+
+# fast build rule for target.
+octomap_msgs_generate_messages_cpp/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make rtabmap_ros/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
+.PHONY : octomap_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GPS.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GPS.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GPS.dir/rule
+
+# Convenience name for target.
+_rtabmap_ros_generate_messages_check_deps_GPS: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GPS.dir/rule
+
+.PHONY : _rtabmap_ros_generate_messages_check_deps_GPS
+
+# fast build rule for target.
+_rtabmap_ros_generate_messages_check_deps_GPS/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GPS.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GPS.dir/build
+.PHONY : _rtabmap_ros_generate_messages_check_deps_GPS/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Point2f.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Point2f.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Point2f.dir/rule
+
+# Convenience name for target.
+_rtabmap_ros_generate_messages_check_deps_Point2f: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Point2f.dir/rule
+
+.PHONY : _rtabmap_ros_generate_messages_check_deps_Point2f
+
+# fast build rule for target.
+_rtabmap_ros_generate_messages_check_deps_Point2f/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Point2f.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Point2f.dir/build
+.PHONY : _rtabmap_ros_generate_messages_check_deps_Point2f/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/rtabmap_map_assembler.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_map_assembler.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_map_assembler.dir/rule
+
+# Convenience name for target.
+rtabmap_map_assembler: rtabmap_ros/CMakeFiles/rtabmap_map_assembler.dir/rule
+
+.PHONY : rtabmap_map_assembler
+
+# fast build rule for target.
+rtabmap_map_assembler/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_map_assembler.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_map_assembler.dir/build
+.PHONY : rtabmap_map_assembler/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Goal.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Goal.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Goal.dir/rule
+
+# Convenience name for target.
+_rtabmap_ros_generate_messages_check_deps_Goal: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Goal.dir/rule
+
+.PHONY : _rtabmap_ros_generate_messages_check_deps_Goal
+
+# fast build rule for target.
+_rtabmap_ros_generate_messages_check_deps_Goal/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Goal.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_Goal.dir/build
+.PHONY : _rtabmap_ros_generate_messages_check_deps_Goal/fast
 
 # Convenience name for target.
 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_RGBDImage.dir/rule:
@@ -1096,21 +1351,6 @@ _rtabmap_ros_generate_messages_check_deps_GlobalDescriptor: rtabmap_ros/CMakeFil
 _rtabmap_ros_generate_messages_check_deps_GlobalDescriptor/fast:
 	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GlobalDescriptor.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GlobalDescriptor.dir/build
 .PHONY : _rtabmap_ros_generate_messages_check_deps_GlobalDescriptor/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap2.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap2.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap2.dir/rule
-
-# Convenience name for target.
-_rtabmap_ros_generate_messages_check_deps_GetMap2: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap2.dir/rule
-
-.PHONY : _rtabmap_ros_generate_messages_check_deps_GetMap2
-
-# fast build rule for target.
-_rtabmap_ros_generate_messages_check_deps_GetMap2/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap2.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetMap2.dir/build
-.PHONY : _rtabmap_ros_generate_messages_check_deps_GetMap2/fast
 
 # Convenience name for target.
 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_AddLink.dir/rule:
@@ -1248,49 +1488,19 @@ _rtabmap_ros_generate_messages_check_deps_Path/fast:
 .PHONY : _rtabmap_ros_generate_messages_check_deps_Path/fast
 
 # Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_icp_odometry.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_icp_odometry.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_icp_odometry.dir/rule
+rtabmap_ros/CMakeFiles/nodelet_generate_messages_eus.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/nodelet_generate_messages_eus.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/nodelet_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-rtabmap_icp_odometry: rtabmap_ros/CMakeFiles/rtabmap_icp_odometry.dir/rule
+nodelet_generate_messages_eus: rtabmap_ros/CMakeFiles/nodelet_generate_messages_eus.dir/rule
 
-.PHONY : rtabmap_icp_odometry
+.PHONY : nodelet_generate_messages_eus
 
 # fast build rule for target.
-rtabmap_icp_odometry/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_icp_odometry.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_icp_odometry.dir/build
-.PHONY : rtabmap_icp_odometry/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_costmap_voxel_markers.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_costmap_voxel_markers.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_costmap_voxel_markers.dir/rule
-
-# Convenience name for target.
-rtabmap_costmap_voxel_markers: rtabmap_ros/CMakeFiles/rtabmap_costmap_voxel_markers.dir/rule
-
-.PHONY : rtabmap_costmap_voxel_markers
-
-# fast build rule for target.
-rtabmap_costmap_voxel_markers/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_costmap_voxel_markers.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_costmap_voxel_markers.dir/build
-.PHONY : rtabmap_costmap_voxel_markers/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_rgbdicp_odometry.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_rgbdicp_odometry.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_rgbdicp_odometry.dir/rule
-
-# Convenience name for target.
-rtabmap_rgbdicp_odometry: rtabmap_ros/CMakeFiles/rtabmap_rgbdicp_odometry.dir/rule
-
-.PHONY : rtabmap_rgbdicp_odometry
-
-# fast build rule for target.
-rtabmap_rgbdicp_odometry/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_rgbdicp_odometry.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_rgbdicp_odometry.dir/build
-.PHONY : rtabmap_rgbdicp_odometry/fast
+nodelet_generate_messages_eus/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/nodelet_generate_messages_eus.dir/build.make rtabmap_ros/CMakeFiles/nodelet_generate_messages_eus.dir/build
+.PHONY : nodelet_generate_messages_eus/fast
 
 # Convenience name for target.
 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_NodeData.dir/rule:
@@ -1321,6 +1531,36 @@ _rtabmap_ros_generate_messages_check_deps_PublishMap: rtabmap_ros/CMakeFiles/_rt
 _rtabmap_ros_generate_messages_check_deps_PublishMap/fast:
 	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_PublishMap.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_PublishMap.dir/build
 .PHONY : _rtabmap_ros_generate_messages_check_deps_PublishMap/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/rtabmap_ros_gencfg.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_ros_gencfg.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/rtabmap_ros_gencfg.dir/rule
+
+# Convenience name for target.
+rtabmap_ros_gencfg: rtabmap_ros/CMakeFiles/rtabmap_ros_gencfg.dir/rule
+
+.PHONY : rtabmap_ros_gencfg
+
+# fast build rule for target.
+rtabmap_ros_gencfg/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_ros_gencfg.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_ros_gencfg.dir/build
+.PHONY : rtabmap_ros_gencfg/fast
+
+# Convenience name for target.
+rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetPlan.dir/rule:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetPlan.dir/rule
+.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetPlan.dir/rule
+
+# Convenience name for target.
+_rtabmap_ros_generate_messages_check_deps_GetPlan: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetPlan.dir/rule
+
+.PHONY : _rtabmap_ros_generate_messages_check_deps_GetPlan
+
+# fast build rule for target.
+_rtabmap_ros_generate_messages_check_deps_GetPlan/fast:
+	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetPlan.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetPlan.dir/build
+.PHONY : _rtabmap_ros_generate_messages_check_deps_GetPlan/fast
 
 # Convenience name for target.
 rtabmap_ros/CMakeFiles/rtabmap_stereo_odometry.dir/rule:
@@ -1546,96 +1786,6 @@ rtabmap_ros_genpy: rtabmap_ros/CMakeFiles/rtabmap_ros_genpy.dir/rule
 rtabmap_ros_genpy/fast:
 	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_ros_genpy.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_ros_genpy.dir/build
 .PHONY : rtabmap_ros_genpy/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetPlan.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetPlan.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetPlan.dir/rule
-
-# Convenience name for target.
-_rtabmap_ros_generate_messages_check_deps_GetPlan: rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetPlan.dir/rule
-
-.PHONY : _rtabmap_ros_generate_messages_check_deps_GetPlan
-
-# fast build rule for target.
-_rtabmap_ros_generate_messages_check_deps_GetPlan/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetPlan.dir/build.make rtabmap_ros/CMakeFiles/_rtabmap_ros_generate_messages_check_deps_GetPlan.dir/build
-.PHONY : _rtabmap_ros_generate_messages_check_deps_GetPlan/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_ros_gencfg.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_ros_gencfg.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_ros_gencfg.dir/rule
-
-# Convenience name for target.
-rtabmap_ros_gencfg: rtabmap_ros/CMakeFiles/rtabmap_ros_gencfg.dir/rule
-
-.PHONY : rtabmap_ros_gencfg
-
-# fast build rule for target.
-rtabmap_ros_gencfg/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_ros_gencfg.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_ros_gencfg.dir/build
-.PHONY : rtabmap_ros_gencfg/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_sync.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_sync.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_sync.dir/rule
-
-# Convenience name for target.
-rtabmap_sync: rtabmap_ros/CMakeFiles/rtabmap_sync.dir/rule
-
-.PHONY : rtabmap_sync
-
-# fast build rule for target.
-rtabmap_sync/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_sync.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_sync.dir/build
-.PHONY : rtabmap_sync/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap.dir/rule
-
-# Convenience name for target.
-rtabmap: rtabmap_ros/CMakeFiles/rtabmap.dir/rule
-
-.PHONY : rtabmap
-
-# fast build rule for target.
-rtabmap/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap.dir/build.make rtabmap_ros/CMakeFiles/rtabmap.dir/build
-.PHONY : rtabmap/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_save_objects_example.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_save_objects_example.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_save_objects_example.dir/rule
-
-# Convenience name for target.
-rtabmap_save_objects_example: rtabmap_ros/CMakeFiles/rtabmap_save_objects_example.dir/rule
-
-.PHONY : rtabmap_save_objects_example
-
-# fast build rule for target.
-rtabmap_save_objects_example/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_save_objects_example.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_save_objects_example.dir/build
-.PHONY : rtabmap_save_objects_example/fast
-
-# Convenience name for target.
-rtabmap_ros/CMakeFiles/rtabmap_stereo_sync.dir/rule:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rtabmap_ros/CMakeFiles/rtabmap_stereo_sync.dir/rule
-.PHONY : rtabmap_ros/CMakeFiles/rtabmap_stereo_sync.dir/rule
-
-# Convenience name for target.
-rtabmap_stereo_sync: rtabmap_ros/CMakeFiles/rtabmap_stereo_sync.dir/rule
-
-.PHONY : rtabmap_stereo_sync
-
-# fast build rule for target.
-rtabmap_stereo_sync/fast:
-	cd /home/zeljko/catkin_ws/build && $(MAKE) -f rtabmap_ros/CMakeFiles/rtabmap_stereo_sync.dir/build.make rtabmap_ros/CMakeFiles/rtabmap_stereo_sync.dir/build
-.PHONY : rtabmap_stereo_sync/fast
 
 src/CameraNode.o: src/CameraNode.cpp.o
 
@@ -3513,7 +3663,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... rtabmap_costmap_plugins2"
-	@echo "... rtabmap_costmap_plugins"
 	@echo "... rtabmap_rviz_plugins"
 	@echo "... rtabmap_point_cloud_assembler"
 	@echo "... rtabmap_pointcloud_to_depthimage"
@@ -3525,56 +3674,73 @@ help:
 	@echo "... rtabmap_wifi_signal_pub"
 	@echo "... rtabmap_map_optimizer"
 	@echo "... rtabmap_rgb_sync"
-	@echo "... _rtabmap_ros_generate_messages_check_deps_Point2f"
-	@echo "... rtabmap_map_assembler"
-	@echo "... _rtabmap_ros_generate_messages_check_deps_Goal"
-	@echo "... _rtabmap_ros_generate_messages_check_deps_MapData"
-	@echo "... octomap_msgs_generate_messages_nodejs"
-	@echo "... find_object_2d_generate_messages_py"
-	@echo "... _rtabmap_ros_generate_messages_check_deps_GPS"
-	@echo "... octomap_msgs_generate_messages_cpp"
-	@echo "... rtabmap_ros_generate_messages_nodejs"
-	@echo "... _rtabmap_ros_generate_messages_check_deps_Info"
-	@echo "... _rtabmap_ros_generate_messages_check_deps_Link"
-	@echo "... rviz_generate_messages_py"
-	@echo "... rtabmap_ros"
-	@echo "... _rtabmap_ros_generate_messages_check_deps_SetGoal"
-	@echo "... rtabmapviz"
-	@echo "... rviz_generate_messages_eus"
-	@echo "... pcl_msgs_generate_messages_nodejs"
-	@echo "... stereo_msgs_generate_messages_lisp"
-	@echo "... octomap_msgs_generate_messages_py"
-	@echo "... _rtabmap_ros_generate_messages_check_deps_GetMap"
-	@echo "... find_object_2d_generate_messages_cpp"
-	@echo "... stereo_msgs_generate_messages_py"
-	@echo "... pcl_msgs_generate_messages_lisp"
+	@echo "... rtabmap_save_objects_example"
+	@echo "... rtabmap_stereo_sync"
 	@echo "... rtabmap_rgbd_sync"
-	@echo "... pcl_msgs_generate_messages_cpp"
-	@echo "... pcl_msgs_generate_messages_py"
-	@echo "... rtabmap_plugins"
-	@echo "... pcl_msgs_generate_messages_eus"
-	@echo "... nodelet_topic_tools_gencfg"
+	@echo "... rtabmap_icp_odometry"
 	@echo "... rtabmap_rgbd_odometry"
-	@echo "... find_object_2d_generate_messages_nodejs"
-	@echo "... rtabmap_ros_generate_messages"
-	@echo "... stereo_msgs_generate_messages_cpp"
+	@echo "... rtabmap"
+	@echo "... rtabmap_ros"
+	@echo "... rviz_generate_messages_py"
+	@echo "... rtabmap_costmap_plugins"
+	@echo "... nodelet_generate_messages_lisp"
+	@echo "... find_object_2d_generate_messages_py"
+	@echo "... rtabmap_ros_generate_messages_nodejs"
+	@echo "... rtabmap_sync"
+	@echo "... bond_generate_messages_cpp"
 	@echo "... rviz_generate_messages_nodejs"
 	@echo "... rtabmap_ros_gencpp"
-	@echo "... pcl_ros_gencfg"
-	@echo "... rtabmap_ros_generate_messages_eus"
+	@echo "... octomap_msgs_generate_messages_nodejs"
+	@echo "... _rtabmap_ros_generate_messages_check_deps_MapData"
+	@echo "... octomap_msgs_generate_messages_lisp"
+	@echo "... stereo_msgs_generate_messages_nodejs"
 	@echo "... stereo_msgs_generate_messages_eus"
 	@echo "... rtabmap_wifi_signal_sub"
 	@echo "... find_object_2d_generate_messages_eus"
 	@echo "... find_object_2d_generate_messages_lisp"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_KeyPoint"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_UserData"
-	@echo "... stereo_msgs_generate_messages_nodejs"
-	@echo "... octomap_msgs_generate_messages_lisp"
+	@echo "... rtabmap_ros_generate_messages_eus"
+	@echo "... pcl_ros_gencfg"
+	@echo "... pcl_msgs_generate_messages_nodejs"
+	@echo "... nodelet_generate_messages_nodejs"
+	@echo "... bond_generate_messages_eus"
+	@echo "... rtabmap_costmap_voxel_markers"
+	@echo "... rtabmap_rgbdicp_odometry"
+	@echo "... bond_generate_messages_py"
+	@echo "... rtabmapviz"
+	@echo "... rviz_generate_messages_eus"
+	@echo "... nodelet_generate_messages_cpp"
+	@echo "... find_object_2d_generate_messages_cpp"
+	@echo "... stereo_msgs_generate_messages_py"
+	@echo "... pcl_msgs_generate_messages_lisp"
+	@echo "... pcl_msgs_generate_messages_cpp"
+	@echo "... pcl_msgs_generate_messages_py"
+	@echo "... rtabmap_plugins"
+	@echo "... pcl_msgs_generate_messages_eus"
+	@echo "... find_object_2d_generate_messages_nodejs"
+	@echo "... nodelet_topic_tools_gencfg"
+	@echo "... bond_generate_messages_lisp"
+	@echo "... stereo_msgs_generate_messages_lisp"
+	@echo "... octomap_msgs_generate_messages_py"
+	@echo "... _rtabmap_ros_generate_messages_check_deps_GetMap"
+	@echo "... nodelet_generate_messages_py"
+	@echo "... bond_generate_messages_nodejs"
+	@echo "... _rtabmap_ros_generate_messages_check_deps_GetMap2"
+	@echo "... stereo_msgs_generate_messages_cpp"
+	@echo "... rtabmap_ros_generate_messages"
+	@echo "... _rtabmap_ros_generate_messages_check_deps_Info"
+	@echo "... _rtabmap_ros_generate_messages_check_deps_Link"
+	@echo "... _rtabmap_ros_generate_messages_check_deps_SetGoal"
+	@echo "... octomap_msgs_generate_messages_cpp"
+	@echo "... _rtabmap_ros_generate_messages_check_deps_GPS"
+	@echo "... _rtabmap_ros_generate_messages_check_deps_Point2f"
+	@echo "... rtabmap_map_assembler"
+	@echo "... _rtabmap_ros_generate_messages_check_deps_Goal"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_RGBDImage"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_MapGraph"
 	@echo "... rtabmap_ros_genlisp"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_GlobalDescriptor"
-	@echo "... _rtabmap_ros_generate_messages_check_deps_GetMap2"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_AddLink"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_GetNodesInRadius"
 	@echo "... rtabmap_ros_generate_messages_lisp"
@@ -3584,12 +3750,12 @@ help:
 	@echo "... rtabmap_rgbd_relay"
 	@echo "... octomap_msgs_generate_messages_eus"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_Path"
-	@echo "... rtabmap_icp_odometry"
-	@echo "... rtabmap_costmap_voxel_markers"
-	@echo "... rtabmap_rgbdicp_odometry"
+	@echo "... nodelet_generate_messages_eus"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_NodeData"
 	@echo "... install/strip"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_PublishMap"
+	@echo "... rtabmap_ros_gencfg"
+	@echo "... _rtabmap_ros_generate_messages_check_deps_GetPlan"
 	@echo "... rtabmap_stereo_odometry"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_GetNodeData"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_ScanDescriptor"
@@ -3605,12 +3771,6 @@ help:
 	@echo "... rtabmap_imu_to_tf"
 	@echo "... _rtabmap_ros_generate_messages_check_deps_ResetPose"
 	@echo "... rtabmap_ros_genpy"
-	@echo "... _rtabmap_ros_generate_messages_check_deps_GetPlan"
-	@echo "... rtabmap_ros_gencfg"
-	@echo "... rtabmap_sync"
-	@echo "... rtabmap"
-	@echo "... rtabmap_save_objects_example"
-	@echo "... rtabmap_stereo_sync"
 	@echo "... src/CameraNode.o"
 	@echo "... src/CameraNode.i"
 	@echo "... src/CameraNode.s"
